@@ -11,6 +11,9 @@ export class UserLogin extends Document {
 
   @Prop()
   email: string;
+
+  @Prop()
+  date: Date;
 }
 
 export const UserLoginSchema = SchemaFactory.createForClass(UserLogin);
